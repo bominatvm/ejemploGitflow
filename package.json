@@ -1,0 +1,15 @@
+{
+  "name": "ejemplogitflow",
+  "version": "1.0.0",
+  "description": "node app server express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guido Reta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}
