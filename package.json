@@ -1,0 +1,19 @@
+{
+  "name": "martin",
+  "version": "1.0.0",
+  "description": "Ejemplo para el curso DevOps UMSA\r modificado\r ivan.\r probando probando\r santiagoo\r asd\r hola soy santi\r probando\r .0.\r Hola Maicol\r new feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bominatvm/ejemploGitflow.git#martinG"
+  },
+  "author": "Martín Gimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bominatvm/ejemploGitflow/issues"
+  },
+  "homepage": "https://github.com/bominatvm/ejemploGitflow/tree/martinG#readme"
+}
