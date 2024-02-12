@@ -1,0 +1,29 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - davidmule
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: node hola_mundo_david.js # o cualquier otro comando de construcción que necesites
+
+    # - name: Deploy
+      # run: |
+        # Aquí puedes agregar comandos para desplegar tu aplicación, como transferir archivos a un servidor o utilizar herramientas de despliegue como AWS CLI, etc.
