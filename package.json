@@ -1,0 +1,15 @@
+{
+  "name": "ejemplogitflow",
+  "version": "1.0.0",
+  "description": "Ejemplo para el curso DevOps UMSA modificado ivan. probando probando santiagoo asd hola soy santi probando .0. Hola Maicol new feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
