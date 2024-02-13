@@ -1,28 +1,24 @@
 
-
-name: Node.JS CI
+name: CI
 
 on:
-
   push:
-    branches: [ "Maicol" ]
+    branches:
+      - Maicol
 
 jobs:
-  
   build:
-
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      
-      - uses: actions/checkout@v3
-        
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: '20.11.0'
 
-      - name: Dependencias
-        run: npm install express
+      - name: Install dependencies
+        run: npm install
           
