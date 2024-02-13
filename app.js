@@ -6,6 +6,13 @@ const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.end('{ "mensaje": "Hola Mundo!!"}');
 });
+
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
+
+  // Close the server after 6 seconds
+  setTimeout(() => {
+    console.log("Closing server...");
+    server.close();
+  }, 6000);
 });
