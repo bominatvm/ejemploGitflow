@@ -4,9 +4,12 @@
   "description": "Ejemplo para el curso DevOps UMSA\r modificado\r ivan.\r probando probando\r santiagoo\r asd\r hola soy santi\r probando\r .0.\r Hola Maicol\r new feature",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC"
+    "devDependencies": {
+    "jest": "^27.0.0"
+  }
 }
