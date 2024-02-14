@@ -21,3 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Verify node_modules
+        run: ls -l node_modules
+
