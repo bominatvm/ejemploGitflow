@@ -1,7 +1,6 @@
 // Importa Express
 const express = require('express');
 
-
 // Crea una instancia de Express
 const app = express();
 
