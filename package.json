@@ -1,0 +1,22 @@
+{
+  "name": "pruebanodejs",
+  "version": "1.0.0",
+  "description": "Primera vez configurando un package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "probando 123..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bominatvm/ejemploGitflow.git"
+  },
+  "keywords": [
+    "holatarola"
+  ],
+  "author": "FedeM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bominatvm/ejemploGitflow/issues"
+  },
+  "homepage": "https://github.com/bominatvm/ejemploGitflow#readme"
+}
