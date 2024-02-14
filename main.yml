@@ -3,7 +3,7 @@ name: Node.js CI
 on:
   push:
     branches:
-      - martinG
+      - main
 
 jobs:
   build:
@@ -11,6 +11,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Initialize npm
+        run: npm init -y
 
       - name: Install Node.js
         uses: actions/setup-node@v2
