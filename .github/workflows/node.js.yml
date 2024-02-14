@@ -6,24 +6,31 @@ name: Node.js CI
 on:
   push:
     branches: [ "FedeM" ]
-
 jobs:
   build:
-
     runs-on: windows-latest
-
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Check for lock file
+        run: |
+          if (!(Test-Path "package-lock.json") -and !(Test-Path "yarn.lock")) {
+            Write-Output "No lock file found. Running npm install to generate one..."
+            npm install
+          }
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Run tests
+        run: npm test
