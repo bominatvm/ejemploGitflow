@@ -12,9 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Initialize npm
-        run: npm init -y
-
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
