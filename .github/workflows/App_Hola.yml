@@ -20,6 +20,3 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-
-    - name: Run Hola Mundo
-      run: node apphola.js
